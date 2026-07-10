@@ -98,3 +98,75 @@ nav {
    cursor: pointer;
    font-size: 18px;
 }
+
+.speaker {
+   width: 100%;
+}
+
+.speaker_elements {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 20px;
+   width: 80%;
+}
+
+.speaker_grid {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 2rem 2.5rem;
+}
+
+.speaker_header {
+   font-size: 2rem;
+   font-weight: 600;
+   margin-bottom: 2.2rem;
+   margin-top: 3rem;
+   padding-bottom: 0.9rem;
+}
+
+.card {
+   display: flex;
+   flex-direction: column;
+   border-radius: 1rem;
+   padding: 0.25rem 0.1rem 0.1rem 0.1rem;
+   border: none;
+   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+   overflow: hidden; 
+}
+
+.role {
+   font-size: 0.75rem;
+   font-weight: 600;
+   color: #1D4ED8;
+   margin-bottom: 0.6rem;
+   padding-top: 2rem;
+   padding-left: 1rem;
+}
+
+.name {
+   font-size: 1.2rem;
+   font-weight: 650;
+   color: black;
+   margin-bottom: 0.2rem;
+   padding-left: 1rem;
+}
+
+.title {
+   font-size: 0.75rem;
+   font-weight: 450;
+   color: #575757;;
+   padding-left: 1rem;
+   padding-bottom: 0.5rem;
+}
+
+.speaker_grid img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   display: block;
+   
+}
