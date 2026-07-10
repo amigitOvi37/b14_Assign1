@@ -309,3 +309,316 @@ nav {
 .card_list li:last-child {
   margin-bottom: 0;
 }
+
+
+/* >> Ai generation (starts) */
+/* ------------------- */
+
+.conference-animation {
+   width: 100%;
+   max-width: 1100px;
+   margin: 100px auto;
+   background: #f4f7fb;
+   border-radius: 15px;
+   overflow: hidden;
+   box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
+}
+
+.stage {
+   height: 260px;
+   background: linear-gradient(to bottom, #3949ab, #1a237e);
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+}
+
+.guest-title {
+   position: absolute;
+   bottom: 15px;
+   color: white;
+   font-family: sans-serif;
+}
+
+.guest {
+   position: relative;
+   width: 60px;
+   height: 150px;
+}
+
+.audience {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: flex-end;
+   padding: 40px;
+   background: white;
+   position: relative;
+}
+
+.person,
+.boy {
+   position: relative;
+   width: 55px;
+   height: 140px;
+}
+
+.head {
+   width: 36px;
+   height: 36px;
+   background: #ffcc99;
+   border-radius: 50%;
+   margin: auto;
+}
+
+.body {
+   width: 24px;
+   height: 55px;
+   background: #2196f3;
+   margin: auto;
+   border-radius: 6px;
+}
+
+.guest .body {
+   background: #ff9800;
+}
+
+.arm {
+   width: 10px;
+   height: 45px;
+   background: #ffcc99;
+   position: absolute;
+   top: 42px;
+}
+
+.arm.left {
+   left: 6px;
+   transform: rotate(15deg);
+}
+
+.arm.right {
+   right: 6px;
+   transform: rotate(-15deg);
+}
+
+.leg {
+   width: 10px;
+   height: 45px;
+   background: #444;
+   position: absolute;
+   bottom: 0;
+}
+
+.leg.left {
+   left: 18px;
+}
+
+.leg.right {
+   right: 18px;
+}
+
+.person {
+   transform: scale(.9);
+}
+
+.person .head,
+.person::before,
+.person::after {
+   content: "";
+}
+
+.person::before {
+   position: absolute;
+   width: 34px;
+   height: 34px;
+   border-radius: 50%;
+   background: #ffcc99;
+   left: 10px;
+}
+
+.person::after {
+   position: absolute;
+   width: 22px;
+   height: 55px;
+   background: #4caf50;
+   left: 16px;
+   top: 34px;
+   border-radius: 5px;
+}
+
+.standing {
+   animation: standUp 2s ease forwards;
+}
+
+@keyframes standUp {
+
+   0% {
+      transform: translateY(35px) scale(.85);
+   }
+
+   100% {
+      transform: translateY(0) scale(1);
+   }
+
+}
+
+.boy-wrapper {
+   position: relative;
+}
+
+.question {
+
+   position: absolute;
+   left: -40px;
+   bottom: 150px;
+
+   background: white;
+   padding: 10px 16px;
+
+   border-radius: 20px;
+
+   box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+
+   font-family: sans-serif;
+
+   font-size: 14px;
+
+   opacity: 0;
+
+   white-space: nowrap;
+}
+
+/* Question 1 */
+
+.q1 {
+   animation: question1 9s infinite;
+}
+
+/* Question 2 */
+
+.q2 {
+   animation: question2 9s infinite;
+}
+
+/* Question 3 */
+
+.q3 {
+   animation: question3 9s infinite;
+}
+
+@keyframes question1 {
+
+   0%,
+   10% {
+      opacity: 0;
+      transform: translateY(20px);
+   }
+
+   15%,
+   28% {
+      opacity: 1;
+      transform: translateY(-15px);
+   }
+
+   35%,
+   100% {
+      opacity: 0;
+   }
+
+}
+
+@keyframes question2 {
+
+   0%,
+   35% {
+      opacity: 0;
+      transform: translateY(20px);
+   }
+
+   40%,
+   55% {
+      opacity: 1;
+      transform: translateY(-15px);
+   }
+
+   60%,
+   100% {
+      opacity: 0;
+   }
+
+}
+
+@keyframes question3 {
+
+   0%,
+   60% {
+      opacity: 0;
+      transform: translateY(20px);
+   }
+
+   65%,
+   82% {
+      opacity: 1;
+      transform: translateY(-15px);
+   }
+
+   90%,
+   100% {
+      opacity: 0;
+   }
+
+}
+/* ----------------------- */
+/* >> Ai generation (Ends) */
+
+
+
+
+.footer {
+   background: #2f2f36;
+   color: white;
+   padding: 3rem 2rem;
+}
+
+.footer-top {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 20px;
+}
+
+.footer-logo img {
+   background-color: white;
+   border-radius: 1rem;
+   padding: 0.1rem 1rem;
+}
+
+.footer-social {
+   display: flex;
+   gap: 1.5rem;
+}
+
+.footer-social a {
+   width: 42px;
+   height: 42px;
+   border: 1px solid rgba(255, 255, 255, .25);
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   text-decoration: none;
+   transition: 0.5s;
+}
+
+.footer-social a:hover {
+   background: red;
+   border-color: black;
+   transform: translateY(-4px);
+}
+
+.footer hr {
+   border: none;
+   height: 0.25rem;
+   background: rgba(255, 255, 255, .15);
+   margin: 1.2rem 0;
+}
