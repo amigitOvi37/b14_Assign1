@@ -150,6 +150,19 @@ nav {
    overflow: hidden; 
 }
 
+.card:hover {
+   display: flex;
+   flex-direction: column;
+   border-radius: 1rem;
+   padding: 0.25rem 0.1rem 0.1rem 0.1rem;
+   border: none;
+   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+   overflow: hidden; 
+   cursor: pointer;
+   transform: translateY(-7px);
+   transition: 1s ease;
+}
+
 .role {
    font-size: 0.75rem;
    font-weight: 600;
@@ -311,8 +324,29 @@ nav {
 }
 
 
+.ai_header {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: -3rem;
+}
+
+.ai_header h1 {
+   font-size: 3rem;
+   font-weight: 600;
+   margin-bottom: 0.5rem;
+   margin-top: 7rem;
+}
+
+.ai_header p {
+   color: #575757;
+}
+
 /* >> Ai generation (starts) */
 /* ------------------- */
+
+
 
 .conference-animation {
    width: 100%;
